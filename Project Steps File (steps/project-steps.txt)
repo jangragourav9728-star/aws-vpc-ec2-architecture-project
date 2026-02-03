@@ -1,0 +1,22 @@
+1. Create a custom VPC (10.0.0.0/16)
+2. Create a public subnet (10.0.1.0/24)
+3. Create a private subnet (10.0.2.0/24)
+4. Create and attach Internet Gateway to VPC
+5. Create route table and add 0.0.0.0/0 → IGW
+6. Associate route table with public subnet
+7. Launch EC2 in public subnet with public IP
+8. Allow SSH (22) and HTTP (80) in security group
+9. Install Apache and host website
+  
+ ***Viva Questions File (notes/viva-questions.txt***
+ Q: What is VPC?
+A: A logically isolated virtual network in AWS.
+
+Q: What makes a subnet public?
+A: A route to Internet Gateway.
+
+Q: Why private subnet has no internet?
+A: No IGW route.
+
+Q: Which port is used for website?
+A: Port 80 (HTTP).
